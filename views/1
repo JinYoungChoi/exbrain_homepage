@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  div(class="na")
+    div.cointainer-fluid
+      ul.pull-left
+        a(class="navbar-brand", href="#") exBrain
+      ul.pull-right
+        li
+           a(href='#') PRODUCT
+        li
+           a(href='#') ABOUT
+        li 
+           a(href-'#') CONTACT
+  div.jumbotron
+    div.container
+     h1 Deliver Intelligence.
+     p My first web page!
+  

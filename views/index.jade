@@ -1,0 +1,107 @@
+extends layout
+
+block content
+
+  div(class="nav navbar-fixed-top")
+    div.container
+      ul.pull-left
+        li: a(id="logo", class="page-scroll", href="#top") exBrain
+      ul.pull-right
+        li
+           a(class="page-scroll", href="#PRODUCT") PRODUCT
+        li
+           a(class="page-scroll", href="#TEAM") TEAM
+        li 
+           a(class="page-scroll", href="#CONTACT") CONTACT
+
+  header#top
+    div.text-vertical-center
+      h1 Deliver Intelligence.
+      p Easy Deep Learning Tool.
+      a(class="page-scroll", href="#PRODUCT") Learn More
+ 
+  section#PRODUCT
+    div.row
+      div.container
+        h1 MAKE DEEP LEARNING EASY.
+        p Even your grand, grand parents may use.
+          div(class="col-md-4")
+            h3 Easy
+            img(src="../images/magic.png")
+            p Even if you're not a PhD holder, you may fully utilize Deep Learning with exBrain's DeepLearning tool.
+          div(class="col-md-4")
+            h3 Intuitive
+            img(src="../images/grandmom.png")
+            p No more tricky CLI. exBrain's Graphical User Inteface (GUI) tool makes anyone be able to try out Deep Learning.
+          div(class="col-md-4")
+            h3 Powerful
+            img(src="../images/power.png")
+            p Just easy? No way. World-class Machine Learning scientists build up powerful back-end system to fully support you .
+
+  section#TEAM
+    div.row
+      div.container
+        H1 The exBrain Team.
+        p Young but Seasoned Team.
+        div(class="col-md-6")
+          div.fred_img
+            img(src="../images/fred_profile.png")
+          div.profile
+            h3 Freddie Choi
+            h4 CEO, Product Manager
+          ul.list-inline
+            li: a(href="#")
+                i(class="fa fa-google-plus-square fa-fw fa-2x")
+            li: a(href="#")
+                i(class="fa fa-linkedin-square fa-fw fa-2x")
+        div(class="col-md-6")
+          div.jay_img
+            img(src="../images/jay_profile.jpg")
+          div.profile
+            h3 Jay Won
+            h4 CTO, Software Engineer/Scienctist
+          ul.list-inline
+            li: a(href="#")
+                i(class="fa fa-google-plus-square fa-fw fa-2x")
+            li: a(href="#")
+                i(class="fa fa-linkedin-square fa-fw fa-2x")
+
+      div.container
+        div(class="col-md-6")
+          div.jw_img
+            img(src="../images/jw_profile.jpeg")
+          h3 Jinwoo Shin
+          h4 Chief Scientist, Advisory
+          ul.list-inline
+            li: a(href="#")
+                i(class="fa fa-google-plus-square fa-fw fa-2x")
+            li: a(href="#")
+                i(class="fa fa-linkedin-square fa-fw fa-2x")
+
+        div(class="col-md-6")
+          div.you_img
+            img(src="../images/you_profile.jpg")
+          h3 It's You
+          br
+          ul.list-inline#you
+            li: a(href="mailto:freddie@exbrain.io")
+                i(class="fa fa-envelope-o fa-fw fa-1g")
+            li: &nbsp
+                a(href="mailto:freddie@exbrain.io") Contact
+
+
+
+  footer#CONTACT
+    h4 <strong>exBrain</strong>
+    p 77 Cheongam-Ro, Nam-Gu, Pohang, <br> Gyungbuk, Korea
+    ul.no-bullet
+      li: 82 54 123 4567
+      li: a(href="mailto:name@example.com") freddie@exbrain.io
+    ul.list-inline
+      li: a(href="#")
+          i(class="fa fa-facebook fa-fw fa-3x")
+      li: a(href="#")
+          i(class="fa fa-twitter fa-fw fa-3x")
+    p Copyright &copy 2015 exBrain Incorporation. All rights reserved.
+   
+

@@ -1,0 +1,205 @@
+/*
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}*/
+
+html, body, section {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar-fixed-top {
+  background-color: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=0.6);
+}
+
+.nav .pull-left {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+.nav .pull-left a{
+  font-size: 18px;
+  color: #00b7FF;
+  padding-top: 10px;
+  display: block;
+}
+
+.nav ul {
+  list-style-type: none;
+}
+
+.nav .pull-right a {
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+}
+
+
+.nav li {
+  float: left;
+}
+
+.nav .container {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../images/color-wooden.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 60px;
+  font-family: 'Shift', sans-serif;
+}
+
+header p {
+  font-size: 35px;
+  color: #fff;
+}
+
+section h1, h2, h3 {
+  margin: 0;
+}
+
+section#PRODUCT {
+
+}
+section#ABOUT {
+  background-color: #fff;
+}
+
+.row {
+  position:relative;
+  top: 15%;  
+}
+
+section p {
+  text-align: center;
+  color: #5a5a5a;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+section .container{
+  position: relative;
+  top: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+section .container p{
+  font-size: 23px;
+}
+
+section#TEAM .fred_img img {
+  width: 30%;
+  hight:i auto;
+}
+
+section#TEAM .jay_img img {
+  width: 53%;
+  height: auto;
+}
+
+section#TEAM .jw_img img {
+  width: 30%;
+  height: auto;
+}
+
+section#TEAM .you_img img {
+  width: 31%;
+  height: auto;
+}
+
+section#TEAM .container {
+  padding-bottom: 10px;
+}
+
+section#TEAM h3 {
+  font-size: 18px;
+  color: #5a5a5a;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+section#TEAM h4{
+  margin: 0 0;
+  padding: 0 0;
+  padding-bottom: 5px;
+  font-size: 15px;
+  color: #7a7a7a; 
+  font-style: italic;
+}
+section#TEAM li{
+  margin: 0 0;
+  padding: 0 0;
+}
+section#TEAM #you a {
+  color: #5a5a5a;
+  font-style: italic;
+  font-size: 19px;
+  padding: 0 0;
+  margin: 0 0;
+}
+ 
+.col-md-4 img{
+  position: relative;
+  width: 70%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer {
+  background-color: #0f0f0f;
+  color: #ddd;
+  height: 30%;
+  text-align: center;
+}
+
+footer h4 {
+  padding-top: 20px;
+  color: #00b7ff;
+  font-size: 20px;
+}
+footer p {
+  color: #ddd;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0 0;
+  maring: 0 0;
+}
+i {
+  padding: 0 0;
+  margin: 0 0;
+}

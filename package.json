@@ -9,9 +9,24 @@
     "body-parser": "~1.12.0",
     "cookie-parser": "~1.3.4",
     "debug": "~2.1.1",
-    "express": "~4.12.2",
+    "express": "~4.12.3",
     "jade": "~1.9.2",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0"
+  },
+  "description": "exBrain web page. This is a web application project to build exbrain's the first web page for the public!",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JinYoungChoi/exbrain_homepage"
+  },
+  "keywords": [
+    "exBrain"
+  ],
+  "author": "JinyoungCHoi",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/JinYoungChoi/exbrain_homepage/issues"
   }
 }

@@ -1,0 +1,26 @@
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+var mainbottom = $('#top').offset().top + $('#top').height();
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > mainbottom) {
+        $('#front').addClass('past-main');
+        $('#front2').addclass('font-change');
+    } else {
+        $('#front').removeClass('past-main');
+        #('#front2').removeClass('font-change');
+   }
+
+});

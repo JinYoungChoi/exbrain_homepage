@@ -2,109 +2,183 @@ extends layout
 
 block content
 
-  div(class="nav navbar-fixed-top")
+  div(id="front", class="navbar navbar-fixed-top")
     div.container
-      ul.pull-left
-        li: a(id="logo", class="page-scroll", href="#top")
-            img(height="30px",src="../images/logo_icon_white.png")
-      ul.pull-right
-        li
-           a(class="page-scroll", href="#PRODUCT") PRODUCT
-        li
-           a(class="page-scroll", href="#PROJECT") PROJECT
-        li
-           a(class="page-scroll", href="#TEAM") TEAM
-        li 
-           a(class="page-scroll", href="#CONTACT") CONTACT
+      a(id="logo", class="navbar-brand page-scroll", href="#top")
+        img(id="ci", height="25px",src="../images/logo_icon.png")
+      button(class="navbar-toggle", data-toggle = "collapse", data-target = ".navHeaderCollapse")
+        span(class="icon-bar")
+        span(class="icon-bar")
+        span(class="icon-bar")
+      div(class = "collapse navbar-collapse navHeaderCollapse")
+        ul(id="front2", class="nav navbar-nav navbar-right")
+          li
+             a(id="a1", class="page-scroll", href="#PROJECT1") Project
+          li
+             a(id="a2", class="page-scroll", href="#TEAM") About
+          li 
+             a(id="a3", class="page-scroll", href="#CONTACT") Contact
 
   header#top
     div.text-vertical-center
       img(width="280px",src="../images/exbrain_logo_01.png")
-      h1 Personalized Information.
-      p Your New Way to Explore the World.
-      a(class="page-scroll", href="#PRODUCT") Learn More
- 
-  section#PRODUCT
-    div.row
+      h1 A Machine Learning Company.
+      a(class="page-scroll", href="#INTRO") Learn More
+      p OR
+      a(style = "font-weight: 600", href="https://docs.google.com/forms/d/1fKmJ6ZQBVAZllppZGgP8sBlqXZkrDFOjCEr_BCU3RcY/viewform") JOIN OUR TEAM!
+
+  section#INTRO
+    div(class="col-xs-12 col-md-12")
+      div.exbackground
+         div.text-vertical-center
+           h1 exbrain.
+           hr(width="50px")
+           h1 A Machine Learning Company.
+    div
+      div(class="col-xs-12 col-md-12")
+        div.container
+          h1 What we do
+          div.describe
+            p We believe in that our machine learning technology can be helpful, and worthwhile to human society. Alerting fatal web hacking trials, recommending clothing items you may love, predicting a critical disease in advance, helping children figure out their potential abilities are the future we admire.
+          div(class="col-xs-12 col-md-4")
+            div
+              img(src="../images/intro_web_security.png")
+            div
+              img(src="../images/intro_healthcare.png")
+
+          div(class="col-xs-12 col-md-4")
+            img(src="../images/intro_fashion.png")
+          div(class="col-xs-12 col-md-4")
+            img(src="../images/intro_edu.png")
+
+  
+  section#PROJECT1
+    div
+      div(class="col-xs-12 col-md-12")
+        div.prjbackground
+          div.text-vertical-left
+            h4 PROJECT 01
+            h1 Intelligent Web Security.
+            hr(width="45px" align="left")
+            h2 Revolutional Web Hacking Method.
+         
+    div
+      div.container#websec
+        div(class = "col-xs-12 col-md-12")
+          h1 Intelligent Web Security.
+          h3 Machine Learning Based Web Security.
+          div.describe
+            p While web has become the essential to our life, the security stands still. A classical way of detecting web hacking is crafted by human researchers, which inevitably results some drawbacks. In order to overcome this limitation, machine learning learns the various, mutated, and hidden patterns of web hackings.
+          div.spec
+            div(class="col-xs-12 col-md-4")
+              h1 1,000,000
+              h3 DATA ANALYZED
+            div(class="col-xs-12 col-md-4")
+              h1 99%
+              h3 Accuracy
+            div(class="col-xs-12 col-md-4")
+              h1 PATENT-PENDING
+              h3 TECHNOLOGY
+            img(src="../images/Alice.png")
+
+  section#PROJECT2
+    div
+      div(class="contain col-xs-12 col-md-12")
+        div.prjbackground2
+          div.text-vertical-right
+            h4 PROJECT 02
+            h1 Clothing Recommendation.
+            hr(width="45px", align="right")
+            h2 A New Way of Shopping.
+    div
       div.container
-        h1 Our World.
-        p Get Personalized Contents.
-          div(class="col-md-12")
+        div(class="col-xs-12 col-md-12")
+          h1 Your Own Clothing.
+          h3 Get Personalized Contents.
+          div.describe
+            p Get sick and tired of seeking out clothing items over the internet? exbrain will make it easy. Once you log your interests such as urban, chic, sportive, we will display you a list of items you may like. All items are alive information gathered from the internet.
+          div.proto-img
             img(src="../images/exbrain-01.png")
 
-  section#PROJECT
-    div.row
-      div.container
-        h1 #1 Project: Intelligent Web Security (ONGOING).
-        p Machine Learning Based Web Security.
-      div.container
-        h1 #2 Project: Personalized Clothing (UPCOMING).
-        p Your Own Clothing Service.
-
   section#TEAM
-    div.row
+    div
+      div(class="col-xs-12 col-md-12")
+        div.teambackground
+          div.text-vertical-center
+            H1 Team.
+            hr(width="45px", align="center")
+            h2 Brilliant, Insightful, Perseverant Engineers.
+    div
       div.container
-        H1 The Team.
-        p Smart, Creative, Professional.
-        div(class="col-md-6")
-          div.fred_img
-            img(src="../images/fred_profile.png")
+        H1 Artisan-mind Engineers
+        div.describe
+          p We believe in that very essential mindset of engineer is to be sophisticated, sensitive to the details of our craft. We know the best product is the best marketing, and sales strategy.
+          a(style = "font-weight: 600", href="https://docs.google.com/forms/d/1fKmJ6ZQBVAZllppZGgP8sBlqXZkrDFOjCEr_BCU3RcY/viewform") JOIN OUR TEAM!
+        div(class="col-xs-12 col-md-6")
+          div.image#1
+            img(src="../images/profile_jy.png")
           div.profile
             h3 Freddie Choi
             h4 CEO, Product Manager
           ul.list-inline
-            li: a(href="#")
-                i(class="fa fa-google-plus-square fa-fw fa-2x")
-            li: a(href="#")
-                i(class="fa fa-linkedin-square fa-fw fa-2x")
-        div(class="col-md-6")
-          div.jay_img
-            img(src="../images/jay_profile.jpg")
+            li: a(href="https://kr.linkedin.com/pub/jinyoung-choi/2b/660/4b3")
+                i(class="fa fa-linkedin-square fa-fw fa-lg")
+          div.caption#caption1
+            p Freddie is a young, and enthusiastic entrepreneur. A 20-year-old boy who wanted to become a quant quitted his research participation in finance engineering lab to join Penta Security Systems, where he spent 4 years in a row. There he served as a product developer, manager, and sales engineer in global business team. While he was in the team, he traveled around the world-America, Asia, and even Africa!, and those experiences helped him develop a whole new state of mind to understand various cultures, and a set of business skills in practical. In addition, he contributed to build up a startup incubator in his school where helps young entrepreneurs to launch their business successfully in very early stage. When he has free time, he loves to read books, go swimming, and play soccer, and guitar. It is known that his English nick was named after Freddie Mercury, whom he respects the most among many other greatest singers.
+
+        div(class="col-xs-12 col-md-6")
+          div.image#2
+            img(src="../images/profile_mj.png")
           div.profile
             h3 Jay Won
-            h4 CTO, Software Engineer/Scienctist
+            h4 CTO, Software Engineer/Scientist
           ul.list-inline
-            li: a(href="#")
-                i(class="fa fa-google-plus-square fa-fw fa-2x")
-            li: a(href="#")
-                i(class="fa fa-linkedin-square fa-fw fa-2x")
+             li: a(href="https://breadmj.wordpress.com/")
+                i(class="fa fa-wordpress fa-fw fa-lg")
+          div.caption#caption2
+            p
+             |Jay has admired, and loved cool software program since he started to study computer science. That inspired him to become a great software engineer. He worked in web log analysis company for several years as a software engineer dedicated to web programming. He insists that he programs like C. Ronaldo, hoo! Spaghetti vongole is his favourite food- it is known that he is good at making it- but he never writes spaghetti code ;)
+             br
+             |He obtained B.S. degree in Computer Science&Engineering in POSTECH.
 
       div.container
-        div(class="col-md-6")
-          div.jw_img
-            img(src="../images/jw_profile.jpeg")
-          h3 Jinwoo Shin
-          h4 Chief Scientist, Advisory
+        div(class="col-xs-12 col-md-6")
+          div.image#3
+            img(src="../images/profile_jw.png")
+          div.profile
+            h3 Jinwoo Shin
+            h4 Chief Scientist, Advisory
           ul.list-inline
-            li: a(href="#")
-                i(class="fa fa-google-plus-square fa-fw fa-2x")
-            li: a(href="#")
-                i(class="fa fa-linkedin-square fa-fw fa-2x")
+            li: a(href="https://sites.google.com/site/mijirim/")
+                i(class="fa fa-home fa-fw fa-lg")
+          div.caption#caption3
+            p Jinwoo Shin is currently an assistant professor at the Department of Electrical Engineering at KAIST, Korea. His major research interest is to develop advanced algorithms for large-scale data and network analytics. He obtained the Ph.D. degree from Massachusetts Institute of Technology in 2010 and B.S. degree (in Math and CS) from Seoul National University in 2001. After spending two years (2010-2012) at Algorithms & Randomness Center, Georgia Institute of Technology, one year (2012-2013) at Business Analytics and Mathematical Sciences Department, IBM T. J. Watson Research, he started teaching at KAIST in Fall 2013. He received Kennneth C. Sevcik (Best Student Paper) Award at SIGMETRICS 2009, George M. Sprowls (Best MIT CS PhD Thesis) Award 2010, Best Paper Award at MOBIHOC 2013, Best Publication Award from INFORMS Applied Probability Society 2013 and Bloomberg Scientific Research Award 2015.
 
-        div(class="col-md-6")
-          div.you_img
-            img(src="../images/you_profile.jpg")
-          h3 It's You
+        div(class="col-xs-12 col-md-6")
+          div.image#4
+            a(href="https://docs.google.com/forms/d/1fKmJ6ZQBVAZllppZGgP8sBlqXZkrDFOjCEr_BCU3RcY/viewform")
+              img(src="../images/profile_you.png")
+          h3 Feel free to join us! :)
           br
           ul.list-inline#you
             li: a(href="mailto:freddie@exbrain.io")
                 i(class="fa fa-envelope-o fa-fw fa-1g")
             li: &nbsp
                 a(href="mailto:freddie@exbrain.io") Contact
+          div.caption#caption4
+            p PEEKABOO! :D
 
 
 
-  footer#CONTACT
-    h4 <strong>exBrain</strong>
+
+  footer(id="CONTACT", class="footers")
+    h4 exbrain
     p 77 Cheongam-Ro, Nam-Gu, Pohang, <br> Gyungbuk, Korea
-    ul.no-bullet
-      li: 82 54 123 4567
-      li: a(href="mailto:name@example.com") freddie@exbrain.io
-    ul.list-inline
-      li: a(href="#")
-          i(class="fa fa-facebook fa-fw fa-3x")
-      li: a(href="#")
-          i(class="fa fa-twitter fa-fw fa-3x")
-    p Copyright &copy 2015 exBrain Incorporation. All rights reserved.
+    p +82 10 3283 7277
+    p
+      a(href="mailto:name@example.com") freddie@exbrain.io
+    p
+      img(height="50px",src="../images/logo_icon_white.png")
+    p Copyright &copy 2015 exbrain Incorporation. All rights reserved.
    
 

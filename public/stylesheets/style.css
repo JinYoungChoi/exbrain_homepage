@@ -1,64 +1,110 @@
-/*
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}*/
+  font-family: "Myriad Set Pro", "Lucida Sans Unicode","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
 
 html, body, section {
   height: 100%;
   width: 100%;
 }
 
-a {
-  color: #00B7FF;
+
+.col-xs-12 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #ccc;
+}
+
+.nav a:hover {
+  color: #4d4d4d !important;
+  background: transparent !important;
 }
 
 .navbar-fixed-top {
+  background-color: #fff;
+  opacity: 0.6;
+  filter: alpha(opacity=0.6);
+}
+
+/*
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-weight: 400;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #9d9d9d;
+  background-color: transparent;
+}*/
+
+.navbar .navbar-right a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #9d9d9d;
+}
+
+.navbar .container {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.past-main {
   background-color: #000;
   opacity: 0.6;
   filter: alpha(opacity=0.6);
 }
 
-.nav .pull-left {
-  padding: 0px 0px;
-  margin: 0px 0px;
+.font-change a {
+  color: #000;
 }
 
-.nav .pull-left a{
-  padding-top: 5px;
-  display: block;
-}
-
-.nav ul {
-  list-style-type: none;
-}
-
-.nav .pull-right a {
-  color: #fff;
-  font-size: 11px;
-  font-weight: bold;
-  padding-top: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: block;
-}
-
-
-.nav li {
-  float: left;
-}
-
-.nav .container {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-.text-vertical-center {
+header .text-vertical-center {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   color: #fff;
-/*  text-shadow: gray 0.1em 0.1em 0.1em;*/
+  font-size: 20px;
+}
+
+header .text-vertical-center p {
+  margin: 0 0 0 0;
+}
+
+section .text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: gray 0em 0.1em 0.1em;
+}
+
+.text-vertical-left {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 30px;
+  text-shadow: gray 0em 0em 0.1em;
+}
+
+.text-vertical-right {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 20px;
+  padding-right: 40px;
+  text-shadow: gray 0em 0em 0.1em;
 }
 
 header {
@@ -66,25 +112,29 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
-/* background: url('../images/color-wooden.jpg') no-repeat center center scroll;*/
+/*  background: url('../images/Web_Background_13.png') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover;*/
 }
 
 header h1 {
+  font-weight: 300;
   color: #000;
-  font-size: 50px;
-  font-family: 'Shift', sans-serif;
+  font-size: 22px;
+  margin: 0 0;
+  padding: 10px 0;
 }
 
 header p {
-  font-size: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 17px;
   color: #A2A2A2;
 }
 header a {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 section {
@@ -92,70 +142,197 @@ section {
   position: relative;
 }
 
-section h1 {
-  font-size: 60px;
-}
-
 section h1, h2, h3 {
   margin: 0;
+  font-weight: 300;
 }
 
-section#PRODUCT {
-  background-color: #f2f2f2;
-}
-section#ABOUT {
-  background-color: #fff;
+section h1 {
+  font-size: 40px;
 }
 
-.row {
-  position:relative;
-  top: 15%;  
+section h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+section h3 {
+  color: #5a5a5a;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+section h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+
+.spec {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  opacity:0;
+  filter:alpha(opacity=0);
+}
+
+.spec h1 {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 45px;
+  font-weight: 100;
+}
+ 
+.spec h3 {
+  margin: 0 0 0 0;
+  padding-top: 5px;
+  font-size: 18px;
+} 
+
+.proto-img {
+  opacity:0;
+  filter:alpha(opacity=0);
+}
+
+section .describe {
+  margin: 0 auto;  
+  text-align: center;
+  width: 80%;
 }
 
 section p {
+  font-size: 17px;
+  color: #333;
+  letter-spacing: 0px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+
+}
+
+
+section#INTRO .box {
+  display: table;
+  color: #fff;
+  background-color: #29abe2;
+  width: 100%;
+  height: 112px;
   text-align: center;
-  color: #5a5a5a;
-  font-size: 35px;
-  margin-bottom: 30px;
+  vertical-align: middle;
+}
+  
+section#INTRO .col-xs-4 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+section#INTRO .col-md-4 {
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+section#INTRO .col-md-12 img{
+  padding-top: 2px;
+  padding-bottom: 1px;
 }
 
 section .container{
   position: relative;
-  padding-top: 42px;
-  height: 100%;
   text-align: center;
+  vertical-align: middle;
 }
 
 section .container p{
   font-size: 23px;
 }
 
-section#TEAM .fred_img img {
+.test {
+  display: table;
   position: relative;
-  width: 30%;
-  height: auto;
+  height: 800px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-size: cover;
 }
 
-section#TEAM .jay_img img {
+
+.teambackground {
+  display: table;
   position: relative;
-  width: 53%;
-  height: auto;
+  height: 850px;
+  width: 100%;
+  background: url('../images/team_image.png') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
-section#TEAM .jw_img img {
+.exbackground {
+  display: table;
   position: relative;
-  width: 30%;
-  height: auto;
+  height: 850px;
+  width: 100%;
+  margin-bottom: 30px;
+/*  background: url('../images/robonauts.jpg') no-repeat center center scroll;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
-section#TEAM .you_img img {
+.prjbackground2 {
+  display: table;
   position: relative;
-  width: 31%;
-  height: auto;
+  height: 850px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: url('../images/3m/funny.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.prjbackground {
+  display: table;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: url('../images/3m/fence.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+section#TEAM .caption p {
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #929292;
+}
+
+section#TEAM .caption {
+  text-align: left;
+  display: none;
+  overflow: none;
+}
+
+section#TEAM .image img {
+  position: relative;
+  width: 50%;
+  cursor: pointer;
 }
 
 section#TEAM .container {
   padding-bottom: 10px;
+}
+
+section#TEAM h1 {
+  margin-top: 30px;
 }
 
 section#TEAM h3 {
@@ -165,18 +342,26 @@ section#TEAM h3 {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-section#TEAM h4{
+
+section#TEAM .profile h4{
   margin: 0 0;
   padding: 0 0;
   padding-bottom: 5px;
   font-size: 15px;
   color: #7a7a7a; 
   font-style: italic;
+  letter-spacing: 0px;
 }
+
 section#TEAM li{
   margin: 0 0;
   padding: 0 0;
 }
+
+section#TEAM a {
+  font-size: 20px;
+}
+
 section#TEAM #you a {
   color: #5a5a5a;
   font-style: italic;
@@ -184,7 +369,7 @@ section#TEAM #you a {
   padding: 0 0;
   margin: 0 0;
 }
- 
+
 .col-md-12 img{
   position: relative;
   width: 100%;
@@ -196,8 +381,13 @@ section#TEAM #you a {
 footer {
   background-color: #0f0f0f;
   color: #ddd;
-  height: 30%;
   text-align: center;
+}
+
+.footers {
+  bottom: 0;
+  width: 100%;
+  height: 240px;
 }
 
 footer h4 {
@@ -205,14 +395,17 @@ footer h4 {
   color: #00b7ff;
   font-size: 20px;
 }
+
 footer p {
   color: #ddd;
 }
+
 footer ul {
   list-style-type: none;
   padding: 0 0;
-  maring: 0 0;
+  margin: 0 0;
 }
+
 i {
   padding: 0 0;
   margin: 0 0;
